@@ -64,4 +64,6 @@ public class AuthorInfoLog {
 
 
     private String desc;
+
+    private String desc2;
 }
