@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.gushi.gushici.mapper.AuthorInfoMapper">
+
+    <resultMap id="BaseResultMap" type="org.gushi.gushici.domain.AuthorInfo">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="authorId" column="author_id" jdbcType="VARCHAR"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="xing" column="xing" jdbcType="VARCHAR"/>
+            <result property="ming" column="ming" jdbcType="VARCHAR"/>
+            <result property="zi" column="zi" jdbcType="VARCHAR"/>
+            <result property="hao" column="hao" jdbcType="VARCHAR"/>
+            <result property="years" column="years" jdbcType="VARCHAR"/>
+            <result property="shortDescription" column="short_description" jdbcType="VARCHAR"/>
+            <result property="description" column="description" jdbcType="VARCHAR"/>
+            <result property="createTime" column="create_time" jdbcType="TIMESTAMP"/>
+            <result property="updateTime" column="update_time" jdbcType="TIMESTAMP"/>
+            <result property="updatePerson" column="update_person" jdbcType="VARCHAR"/>
+            <result property="enable" column="enable" jdbcType="TINYINT"/>
+            <result property="remarks" column="remarks" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,author_id,name,
+        xing,ming,zi,
+        hao,years,short_description,
+        description,create_time,update_time,
+        update_person,enable,remarks
+    </sql>
+</mapper>
